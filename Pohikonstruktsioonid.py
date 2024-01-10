@@ -36,3 +36,54 @@
 #d=l/pi          #3.14...
 #print("Labimoot= ", d)
 
+#from random import *
+#1 Juku laheb kinno
+#nimi = input("Mis on su nimi? ")
+#if nimi.upper()=="JUKU":
+#	print("Laheme kinno")
+#	vanus=int(input("Kui vana sa oled? "))
+#	if vanus<0 or vanus>120:
+#		vastus="viga vastusega"
+#	elif vanus<6:
+#		vastus="tasuta pilet"
+#	elif vanus<14:
+#		vastus="lastepilet"
+#	elif vanus<65:
+#		vastus="taispilet"
+#	elif vanus<120:
+#		vastus="sooduspilet"
+#	print("On vaja Jukule osta", vastus)
+#else:
+#	print("Joonistame")
+
+#2
+
+#n1 = input("Esimene nimi: ")
+#n2 = input("Teine nimi: ")
+#if n1.upper()=="A" and n2.upper()=="B" or n1.upper()=="B" and n2.upper()=="A":
+#	print("Pinginaabrid")
+#else:
+#	print("Nad ei ole naabrid")
+#if n1.upper() in ["A","B"] and n2.upper() in ["A","B"]:
+#	print("Pinginaabrid")
+#else:
+#	print("Nad ei ole naabrid")
+
+#3
+
+#sein1 = float(input("Esimese seina pikkus: "))
+#sein2 = float(input("Teise seina pikkus: "))
+#S = sein1 * sein2
+#print("Pindala ruutmeetrites on: ", S)
+#vastus = input("Soovite teha remonti? ")
+#if vastus.lower()=="jah":
+#	hind = float(input("Palju maksab ruutmeeter? "))
+#	summa = hind * S
+#	print("Ruutmeetri hind: ", summa)
+
+#4
+
+hind = float(input("Hind: "))
+if hind>700:
+	hind*=0.7
+print("Uus hind: ", hind)
