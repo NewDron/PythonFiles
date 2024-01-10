@@ -31,7 +31,8 @@
 #mitu=int(input("Mitu kommi tahad?"))
 #print(kogus-mitu, "Komme jaanud")
 
-from math import *
-l=float(input("Umbermoot:"))
-d=l/pi          #3.14...
-print("Labimoot= ", d)
+#from math import *
+#l=float(input("Umbermoot:"))
+#d=l/pi          #3.14...
+#print("Labimoot= ", d)
+
