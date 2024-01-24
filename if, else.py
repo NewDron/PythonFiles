@@ -23,6 +23,8 @@ a = int(input())
 #else:
 #    print("Hinne 5")
 
+#5
+
 temperatuur = float(input("Kirjutage toa temperatuur: "))
 
 if  temperatuur > 18:
@@ -30,6 +32,7 @@ if  temperatuur > 18:
 else:
     print("Temperatuur on alla 18 kraadi.")
 
+#6
 
 pikkus = float(input("Kirjutage oma pikkus: "))
 
@@ -40,6 +43,7 @@ elif pikkus >= 160 and pikkus <= 180:
 else:
     print("Sa oled pikk.")
 
+#7
 
 pikkus = float(input("Pikkus: "))
 sugu = input("Sugu (M/F): ")
@@ -61,7 +65,7 @@ elif sugu == "F":
 else:
     print("Viga sugu valimisel.")
 
-
+#8
 
 piim_hind = 2.99
 leib_hind = 1.99
@@ -79,7 +83,7 @@ kokku = piim_cost + leib_cost + munad_cost
 
 print("Summa kokku on", round(kokku, 2))
 
-
+#9
 
 side1 = float(input("Sisesta pikkus 1: "))
 side2 = float(input("Sisesta pikkus 2: "))
@@ -91,7 +95,7 @@ if side1 == side2 == side3 == side4:
 else:
     print("See ei ole ruut.")
 
-
+#10
 
 num1 = float(input("Esimene number: "))
 num2 = float(input("Teine number: "))
@@ -111,7 +115,7 @@ else:
 
 print("Tulemus on", result)
 
-
+#11
 
 birthday = int(input("Kirjuta oma sunnipaev: "))
 
@@ -120,7 +124,7 @@ if birthday % 10 == 0:
 else:
     print("See ei ole juubel!")
 
-
+#12
 
 price = float(input("Kirjuta toote hind €: "))
 
@@ -132,7 +136,7 @@ else:
 final_price = price - discount
 print("Lopphind on", final_price, "€")
 
-
+#13
 
 sugu = input("Mis on kandidaadi sugu (mees/naine): ")
 
@@ -147,7 +151,7 @@ elif sugu == "naine":
 else:
     print("Viga!")
 
-
+#14
 
 num_people = int(input("Palju inimesi on: "))
 bus_size = int(input("Palju mahub bussi: "))
