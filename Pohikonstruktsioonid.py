@@ -37,53 +37,25 @@
 #print("Labimoot= ", d)
 
 #from random import *
-#1 Juku laheb kinno
-#nimi = input("Mis on su nimi? ")
-#if nimi.upper()=="JUKU":
-#	print("Laheme kinno")
-#	vanus=int(input("Kui vana sa oled? "))
-#	if vanus<0 or vanus>120:
-#		vastus="viga vastusega"
-#	elif vanus<6:
-#		vastus="tasuta pilet"
-#	elif vanus<14:
-#		vastus="lastepilet"
-#	elif vanus<65:
-#		vastus="taispilet"
-#	elif vanus<120:
-#		vastus="sooduspilet"
-#	print("On vaja Jukule osta", vastus)
-#else:
-#	print("Joonistame")
 
-#2
+#8
 
-#n1 = input("Esimene nimi: ")
-#n2 = input("Teine nimi: ")
-#if n1.upper()=="A" and n2.upper()=="B" or n1.upper()=="B" and n2.upper()=="A":
-#	print("Pinginaabrid")
-#else:
-#	print("Nad ei ole naabrid")
-#if n1.upper() in ["A","B"] and n2.upper() in ["A","B"]:
-#	print("Pinginaabrid")
-#else:
-#	print("Nad ei ole naabrid")
+from datetime import *
+from random import *
+arve_nr=date.today()#datetime.now()
+tsekk="Arve: "+str(arve_nr)+"\nToode hind kogus Summa\n"
+summa=0
 
-#3
+tooded=["Piim","Leib","Kommid"] #len(tooded)=3
 
-#sein1 = float(input("Esimese seina pikkus: "))
-#sein2 = float(input("Teise seina pikkus: "))
-#S = sein1 * sein2
-#print("Pindala ruutmeetrites on: ", S)
-#vastus = input("Soovite teha remonti? ")
-#if vastus.lower()=="jah":
-#	hind = float(input("Palju maksab ruutmeeter? "))
-#	summa = hind * S
-#	print("Ruutmeetri hind: ", summa)
+for i in range(len(tooded)):
+    toode=tooded[i]
+    hind=randint(50,150)/100
+    v=input("Toode: "+toode+" Hind: "+str(hind)+"\nKas tahad osta?").lower()
+    if v =="jah":
+        mitu=int(input("Mitu?"))
+        tsekk+=toode+" "+str(hind)+" "+str(mitu)+" "+str(mitu*hind)+"\n"
+        summa+=mitu*hind
 
-#4
-
-hind = float(input("Hind: "))
-if hind>700:
-	hind*=0.7
-print("Uus hind: ", hind)
+tsekk+="Kokku maksta: "+str(summa)
+print(tsekk)
