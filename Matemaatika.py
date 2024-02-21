@@ -40,8 +40,6 @@ for _ in range(küsimusi):
             print("Õige vastus!")
         else:
             print("Vale vastus!")
-    except ValueError:
-        print("Palun kirjuta number.")
 
 print(f"Õigeid vastuseid: {punkte}/{küsimusi}")
 
